@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кофейня Уголок</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#">Уголок</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
+          <li class="nav__item"><a class="nav__link" href="#menu">Меню</a></li>
+          <li class="nav__item"><a class="nav__link" href="#why">Почему мы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="header__burger" type="button" aria-label="меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__label">кофейня в центре</p>
+          <h1 class="hero__title">Кофе, который<br>хочется допить</h1>
+          <p class="hero__descr">Небольшая кофейня на углу. Зерно обжариваем сами, выпечку печём с утра. Макет взят как идея лендинга из Figma Community (FOODZ / landing), секции свои.</p>
+          <a class="btn" href="#menu">Смотреть меню</a>
+        </div>
+        <div class="hero__pic">
+          <img src="img/hero.jpg" alt="чашка кофе">
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <img class="about__img" src="img/about.jpg" alt="внутри кофейни">
+        <div class="about__content">
+          <h2 class="section-title">О кофейне</h2>
+          <p class="about__text">Открылись в 2022. Места немного, примерно 20 посадочных. Работаем без громкой музыки, можно сесть с ноутбуком до 14:00.</p>
+          <p class="about__text">Берём зерно у местной обжарки и мелем под каждый напиток. Молоко обычное и растительное.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2 class="section-title section-title--center">Меню</h2>
+        <ul class="menu__list">
+          <li class="card">
+            <img class="card__img" src="img/coffee-1.jpg" alt="капучино">
+            <h3 class="card__title">Капучино</h3>
+            <p class="card__text">Эспрессо и молоко, 250 мл</p>
+            <p class="card__price">220 ₽</p>
+          </li>
+          <li class="card">
+            <img class="card__img" src="img/coffee-2.jpg" alt="латте">
+            <h3 class="card__title">Латте</h3>
+            <p class="card__text">Больше молока, мягкий вкус</p>
+            <p class="card__price">240 ₽</p>
+          </li>
+          <li class="card">
+            <img class="card__img" src="img/coffee-3.jpg" alt="зерно">
+            <h3 class="card__title">Фильтр</h3>
+            <p class="card__text">Светлая обжарка, 300 мл</p>
+            <p class="card__price">200 ₽</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="why" id="why">
+      <div class="container">
+        <h2 class="section-title section-title--center">Почему к нам заходят</h2>
+        <ul class="why__list">
+          <li class="why__item">
+            <h3 class="why__title">Своя обжарка</h3>
+            <p class="why__text">Партия на неделю, не лежит месяцами.</p>
+          </li>
+          <li class="why__item">
+            <h3 class="why__title">Нормальные цены</h3>
+            <p class="why__text">Капучино 220, без «авторской» наценки.</p>
+          </li>
+          <li class="why__item">
+            <h3 class="why__title">Тихо днём</h3>
+            <p class="why__text">До обеда можно поработать, розетки есть.</p>
+          </li>
+          <li class="why__item">
+            <h3 class="why__title">Выпечка своя</h3>
+            <p class="why__text">Сырники и круассаны, пока не закончатся.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="section-title section-title--center">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="review">
+            <p class="review__text">«Капучино нормальный, не водянистый. Сидела с курсовой часа два, никто не выгонял.»</p>
+            <p class="review__name">Аня, 2 курс</p>
+          </li>
+          <li class="review">
+            <p class="review__text">«Фильтр кислит, но мне так и надо. Круассан был ещё тёплый.»</p>
+            <p class="review__name">Игорь</p>
+          </li>
+          <li class="review">
+            <p class="review__text">«Маленько тесно в час пик, лучше приходить до 11.»</p>
+            <p class="review__name">Марина</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container contacts__inner">
+        <div>
+          <h2 class="section-title">Контакты</h2>
+          <address class="contacts__address">
+            ул. Лесная, 14<br>
+            пн–вс 8:00–21:00<br>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+          </address>
+        </div>
+        <form class="form" action="#" method="post">
+          <label class="form__label">
+            Имя
+            <input class="form__input" type="text" name="name" required>
+          </label>
+          <label class="form__label">
+            Телефон
+            <input class="form__input" type="tel" name="phone">
+          </label>
+          <label class="form__label">
+            Сообщение
+            <textarea class="form__input form__input--area" name="msg" rows="4"></textarea>
+          </label>
+          <button class="btn" type="submit">Отправить</button>
+          <p class="form__note">Форма пока никуда не уходит, просто для вёрстки.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 Кофейня «Уголок»</p>
+      <a class="footer__link" href="#">наверх</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
